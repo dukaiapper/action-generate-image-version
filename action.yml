@@ -1,0 +1,25 @@
+name: 'Action generate image version'
+description: 'Get image versioon'
+author: 'dukaiapper'
+branding:
+  icon: arrow-right-circle
+  color: gray-dark
+inputs:
+  timeZone:
+    description: 'time zone'
+    required: false
+    default: 0
+  dateFormat:
+    description: 'timestamp format'
+    required: false
+    default: 'YY-MM-DD'
+  prefix:
+    description: 'prefix'
+    required: false
+    default: ''
+outputs:
+  time:
+    description: 'current image version'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
