@@ -18,7 +18,7 @@ inputs:
     required: false
     default: ''
 outputs:
-  time:
+  imageVersion:
     description: 'current image version'
 runs:
   using: 'node16'
